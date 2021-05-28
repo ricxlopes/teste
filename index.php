@@ -3,7 +3,7 @@
 
 $conn = new PDO("mysql:dbname=dbphp7;host=localhost", "root", "");
 
-$stmt = $conn->prepare("SELECT * FROM tb_usuarios ORDER BY idusuario");
+$stmt = $conn->prepare("SELECT senha, usuario FROM tb_usuarios ORDER BY idusuario");
 
 $stmt->execute();
 
